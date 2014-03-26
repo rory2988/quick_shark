@@ -199,6 +199,8 @@ function drawBarchart(containerId, allData, yAxisText, chartAreaWidth,
       .style("fill", function(d) {
         return "rgb(100, 145, " + (d.counter*100) + ")";
       })
+      //Fix "hanging" numbers visible over bar
+      .style("font-size", "0px")
   };
 
   //Set default sort order to false, as in not sorted
